@@ -1,0 +1,210 @@
+:root {
+  --bg: #e9e7ec;
+  --card: #ffffff;
+  --text: #111;      /* основной текст */
+  --muted: #bbb;     /* второстепенный текст */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TOP GRADIENT */
+.top-gradient {
+  background: linear-gradient(90deg, #fca54d, #fc7a67, #ff7bfb);
+  color: var(--text); /* теперь чёрный текст */
+  padding-bottom: 80px;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 60vh;
+}
+
+.hero p {
+  line-height: 1.6;
+}
+
+.hero-contacts a {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 1.3rem;
+  color: var(--text);  /* чёрный текст на градиенте */
+  text-decoration: none;
+}
+
+.hero-cv {
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
+  background: white;
+  color: #111;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-cv:hover {
+  background: #fc7a67;
+  color: white;
+}
+
+/* LANGUAGE */
+.language {
+  position: relative;
+}
+
+.lang-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lang-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  z-index: 10;
+}
+
+.lang-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.lang-menu.show {
+  display: flex;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+/* SKILLS */
+.skills {
+  padding: 120px 0;
+}
+
+.skill-item {
+  margin-bottom: 80px;
+}
+
+.skill-card {
+  background: var(--card);
+  padding: 30px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background: #111;
+  color: white;
+  padding: 120px 0;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.project.reverse {
+  direction: rtl;
+}
+
+.project.reverse * {
+  direction: ltr;
+}
+
+.project-image {
+  height: 350px;
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+
+/* EDUCATION */
+.education {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.education-item p {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  padding: 60px 0;
+  text-align: center;
+  background: #000;
+  color: white;
+}
+
+footer a {
+  display: block;  /* контакты друг под другом */
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .portfolio .project{
+    grid-template-columns: 1fr;
+  }
+  .lang-right{
+    justify-content:center;
+    margin-bottom:20px;
+  }
+  .hero-contacts a{
+    display:block;
+    margin-bottom:10px;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="top-gradient">
+  <div class="container">
+    <nav>
+      <div class="language lang-right">
+        <button id="langBtn" class="lang-btn">DE ▾</button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="de">Deutsch</button>
+          <button data-lang="en">English</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <!-- HERO TITLES -->
+      <h1 class="text-de">Hallo, ich bin Backend Developer</h1>
+      <h1 class="text-en" style="display:none">Hi, I'm Backend Developer</h1>
+
+      <!-- HERO SUBTITLES -->
+      <p class="text-de">Backend Developer & DevOps Engineer.<br>Ich entwickle skalierbare Systeme und performante Backend-Architekturen.</p>
+      <p class="text-en" style="display:none">Backend Developer & DevOps Engineer.<br>I develop scalable systems and high-performance backends.</p>
+
+      <!-- CONTACT BUTTONS -->
+      <div class="hero-contacts">
+        <a href="https://wa.me/49123456789" target="_blank">WhatsApp +49 123 456 789</a>
+        <a href="mailto:mail@example.com">mail@example.com</a>
+      </div>
+
+      <!-- CV BUTTON -->
+      <a id="cvDownload" href="./resumes/Lebenslauf.pdf" target="_blank" class="hero-cv">Lebenslauf herunterladen</a>
+    </section>
+
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <h2 class="section-title text-de">Skills</h2>
+    <h2 class="section-title text-en" style="display:none">Skills</h2>
+
+    <div class="skill-item">
+      <div class="skill-card">
+        <h3 class="text-de">Rust</h3>
+        <h3 class="text-en" style="display:none">Rust</h3>
+        <p class="text-de">Entwicklung performanter Backend-Systeme mit Fokus auf Memory-Safety, Async-Architekturen und API-Design.</p>
+        <p class="text-en" style="display:none">High-performance backend systems with focus on memory safety, async architecture and API design.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-card">
+        <h3 class="text-de">Python</h3>
+        <h3 class="text-en" style="display:none">Python</h3>
+        <p class="text-de">Backend-Services, Automatisierung und Microservice-Architekturen.</p>
+        <p class="text-en" style="display:none">Backend services, automation and microservice architectures.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-card">
+        <h3 class="text-de">DevOps</h3>
+        <h3 class="text-en" style="display:none">DevOps</h3>
+        <p class="text-de">CI/CD Pipelines, Docker, Kubernetes und Cloud Deployments.</p>
+        <p class="text-en" style="display:none">CI/CD pipelines, Docker, Kubernetes and cloud deployments.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio">
+  <div class="container">
+    <h2 class="section-title text-de">Portfolio</h2>
+    <h2 class="section-title text-en" style="display:none">Portfolio</h2>
+
+    <div class="project">
+      <div class="project-text">
+        <h2 class="text-de">Projekt Eins</h2>
+        <h2 class="text-en" style="display:none">Project One</h2>
+        <p class="text-de">Architektur, Technologien und technische Herausforderungen.</p>
+        <p class="text-en" style="display:none">Architecture, technologies and technical challenges.</p>
+      </div>
+      <div class="project-image"></div>
+    </div>
+
+    <div class="project reverse">
+      <div class="project-text">
+        <h2 class="text-de">Projekt Zwei</h2>
+        <h2 class="text-en" style="display:none">Project Two</h2>
+        <p class="text-de">Cloud-Integration und komplexe Datenverarbeitung.</p>
+        <p class="text-en" style="display:none">Cloud integration and complex data processing.</p>
+      </div>
+      <div class="project-image"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<div class="container">
+  <section class="education">
+    <h2 class="section-title text-de">Education</h2>
+    <h2 class="section-title text-en" style="display:none">Education</h2>
+
+    <div class="education-item">
+      <h3 class="text-de">Bachelor of Computer Science</h3>
+      <h3 class="text-en" style="display:none">Bachelor of Computer Science</h3>
+      <p class="text-de">Universität Beispielstadt – Backend-Systeme und verteilte Architekturen.</p>
+      <p class="text-en" style="display:none">Example University – Backend systems and distributed architectures.</p>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <a href="https://wa.me/49123456789" target="_blank">WhatsApp +49 123 456 789</a>
+    <a href="mailto:mail@example.com">mail@example.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
