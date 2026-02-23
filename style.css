@@ -1,10 +1,12 @@
+/* -------------------- Root Variables -------------------- */
 :root {
   --bg: #e9e7ec;
   --card: #ffffff;
-  --text: #111;      /* основной текст */
-  --muted: #bbb;     /* второстепенный текст */
+  --text: #111;
+  --muted: #bbb;
 }
 
+/* -------------------- Global Styles -------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -23,14 +25,13 @@ body {
   margin: auto;
 }
 
-/* TOP GRADIENT */
+/* -------------------- Top Gradient / Hero -------------------- */
 .top-gradient {
   background: linear-gradient(90deg, #fca54d, #fc7a67, #ff7bfb);
-  color: var(--text); /* теперь чёрный текст */
+  color: var(--text); /* черный текст */
   padding-bottom: 80px;
 }
 
-/* HERO */
 .hero {
   padding: 80px 0 60px;
   display: flex;
@@ -47,82 +48,104 @@ body {
   display: inline-block;
   margin-right: 40px;
   font-size: 1.3rem;
-  color: var(--text);  /* чёрный текст на градиенте */
+  color: var(--text);
   text-decoration: none;
 }
 
+/* -------------------- Buttons -------------------- */
+/* CV Button */
 .hero-cv {
-  display: inline-block;
-  margin-top: auto;
-  align-self: flex-start;
-  background: white;
-  color: #111;
-  padding: 12px 25px;
+  background: #111;
+  color: #fff;
+  padding: 15px 32px; /* увеличено на ~30% */
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .hero-cv:hover {
-  background: #fc7a67;
-  color: white;
+  background: #333;
+  color: #fff;
 }
 
-/* LANGUAGE */
+/* -------------------- Language Button -------------------- */
 .language {
   position: relative;
 }
 
 .lang-right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* кнопка справа */
+  padding-top: 20px;         /* отступ сверху */
 }
 
 .lang-btn {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
   border-radius: 12px;
-  padding: 8px 16px;
+  padding: 13px 26px;        /* увеличено на 30% */
   font-weight: 500;
   cursor: pointer;
-  margin-top: 10px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  position: relative;
 }
 
+/* Убираем стрелку */
+.lang-btn::after {
+  content: "";
+}
+
+.lang-btn:hover {
+  background: #333;
+}
+
+/* Language Menu */
 .lang-menu {
   position: absolute;
   top: 120%;
-  right: 0;
-  background: #fff;
+  right: 0; /* под кнопкой справа */
+  background: #111;
   border-radius: 12px;
   padding: 10px 0;
   display: none;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   min-width: 180px;
   z-index: 10;
 }
 
 .lang-menu button {
-  background: none;
-  border: none;
+  background: #111;
+  color: #fff;
   padding: 10px 20px;
-  cursor: pointer;
   text-align: left;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.lang-menu button:hover {
+  background: #333;
 }
 
 .lang-menu.show {
   display: flex;
 }
 
-/* SECTION TITLES */
+/* -------------------- Section Titles -------------------- */
 .section-title {
   text-align: center;
   font-size: 48px;
   margin-bottom: 80px;
 }
 
-/* SKILLS */
+/* -------------------- Skills -------------------- */
 .skills {
   padding: 120px 0;
 }
@@ -138,7 +161,7 @@ body {
   border-radius: 12px;
 }
 
-/* PORTFOLIO */
+/* -------------------- Portfolio -------------------- */
 .portfolio {
   background: #111;
   color: white;
@@ -167,7 +190,7 @@ body {
   border-radius: 8px;
 }
 
-/* EDUCATION */
+/* -------------------- Education -------------------- */
 .education {
   padding: 120px 0;
   text-align: center;
@@ -178,7 +201,7 @@ body {
   color: var(--muted);
 }
 
-/* FOOTER */
+/* -------------------- Footer -------------------- */
 footer {
   padding: 60px 0;
   text-align: center;
@@ -194,13 +217,14 @@ footer a {
   font-size: 1.2rem;
 }
 
-/* RESPONSIVE */
+/* -------------------- Responsive -------------------- */
 @media(max-width:900px){
   .portfolio .project{
     grid-template-columns: 1fr;
   }
   .lang-right{
-    justify-content:center;
+    justify-content:flex-end; /* кнопка справа на мобильных */
+    padding-top: 20px;
     margin-bottom:20px;
   }
   .hero-contacts a{

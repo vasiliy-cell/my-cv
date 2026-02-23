@@ -2,13 +2,18 @@ const langBtn = document.getElementById("langBtn");
 const langMenu = document.getElementById("langMenu");
 const cvBtn = document.getElementById("cvDownload");
 
+// открытие/закрытие меню при клике на кнопку
 langBtn.addEventListener("click", e => {
-  e.stopPropagation();
+  e.stopPropagation();          // чтобы клик на кнопку не закрывал меню
   langMenu.classList.toggle("show");
 });
 
-document.addEventListener("click", () => langMenu.classList.remove("show"));
+// закрытие меню при клике вне кнопки
+document.addEventListener("click", () => {
+  langMenu.classList.remove("show");
+});
 
+// переключение языка
 document.querySelectorAll(".lang-menu button").forEach(btn => {
   btn.addEventListener("click", () => {
     const lang = btn.dataset.lang;
@@ -31,6 +36,7 @@ document.querySelectorAll(".lang-menu button").forEach(btn => {
       langBtn.textContent = "EN ▾";
     }
 
+    // закрываем меню
     langMenu.classList.remove("show");
   });
 });
