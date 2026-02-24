@@ -25,27 +25,114 @@ body {
   margin: auto;
 }
 
-/* -------------------- Top Gradient / Hero -------------------- */
-.top-gradient {
-  background: linear-gradient(90deg, #fca54d, #fc7a67, #ff7bfb);
-  color: var(--text);
-  padding-bottom: 80px;
+/* -------------------- Header -------------------- */
+/* -------------------- Header -------------------- */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
 }
 
-.hero {
-  padding: 80px 0 60px;
+.header-inner {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* чтобы кнопка языка и ссылки были справа */
+  gap: 10px; /* уменьшенный промежуток между кнопкой и ссылками */
+  height: 70px;
+}
+
+/* Хедер ссылки в черном прямоугольнике */
+.header-nav {
+  background: #111;
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
   gap: 30px;
-  min-height: 60vh;
-  margin: 0 auto;
 }
 
-#about_me_text{
-  max-width: 850px;  
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-#about_me_text_en{
+.header-nav a:hover {
+  color: #fc7a67;
+}
+
+
+/* -------------------- Language Popup -------------------- */
+.language {
+  position: relative;
+}
+
+.lang-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.lang-btn:hover {
+  background: #333;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #111;
+  border-radius: 12px;
+  padding: 10px 0;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  min-width: 140px;
+  z-index: 10;
+}
+
+.lang-menu.show {
+  display: flex;
+}
+
+.lang-option {
+  background: #111;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-option:hover {
+  background: #333;
+}
+
+/* -------------------- Top Gradient / Hero -------------------- */
+.top-gradient { 
+  background: linear-gradient(90deg,#fca54d,#fc7a67,#ff7bfb);
+  padding-top: 70px; /* чтобы header не перекрывал */
+  padding-bottom: 30px;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0 30px;
+}
+
+#about_me_text, #about_me_text_en {
   max-width: 850px;  
 }
 
@@ -55,15 +142,7 @@ body {
   margin-bottom: 1em;
 }
 
-.hero-contacts a {
-  display: inline-block;
-  margin-right: 40px;
-  font-size: 1.3rem;
-  color: var(--text);
-  text-decoration: none;
-}
-
-/* -------------------- Buttons -------------------- */
+/* Hero CV Button */
 .hero-cv {
   background: #111;
   color: #fff;
@@ -80,71 +159,6 @@ body {
 .hero-cv:hover {
   background: #333;
   color: #fff;
-}
-
-/* -------------------- Language Button -------------------- */
-.language {
-  position: relative;
-}
-
-.lang-right {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 20px;
-}
-
-.lang-btn {
-  background: #111;
-  color: #fff;
-  border: 1px solid #111;
-  border-radius: 12px;
-  padding: 9px 18px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 1rem;
-  position: relative;
-}
-
-.lang-btn::after {
-  content: "";
-}
-
-.lang-btn:hover {
-  background: #333;
-}
-
-/* Language Menu */
-.lang-menu {
-  position: absolute;
-  top: 120%;
-  right: 0;
-  background: #111;
-  border-radius: 12px;
-  padding: 10px 0;
-  display: none;
-  flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  min-width: 180px;
-  z-index: 10;
-}
-
-.lang-menu button {
-  background: #111;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: left;
-  cursor: pointer;
-  border: none;
-  transition: 0.3s;
-}
-
-.lang-menu button:hover {
-  background: #333;
-}
-
-.lang-menu.show {
-  display: flex;
 }
 
 /* -------------------- Section Titles -------------------- */
@@ -165,35 +179,26 @@ body {
 
 .skill-card {
   background: var(--card);
-  padding: 55px 70px; /* увеличено примерно на 40% */
+  padding: 55px 70px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-}
-
-.skill-card h3 {
-  font-size: 1.4rem; /* увеличенный заголовок */
-  margin-bottom: 15px; /* больше отступ между заголовком и текстом */
-}
-
-.skill-card p {
-  font-size: 1.3rem; 
-  line-height: 1.6;
-}
-
-
-
-/* --- Skill Card Hover Effect --- */
-.skill-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: scale(1.05); /* увеличивается на 5% */
+  transform: scale(1.05);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
 }
 
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
 
-
+.skill-card p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
 
 /* -------------------- Portfolio -------------------- */
 .portfolio {
@@ -256,13 +261,8 @@ footer a {
   .portfolio .project{
     grid-template-columns: 1fr;
   }
-  .lang-right{
-    justify-content:flex-end;
-    padding-top: 20px;
-    margin-bottom:20px;
-  }
-  .hero-contacts a{
-    display:block;
-    margin-bottom:10px;
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
   }
 }

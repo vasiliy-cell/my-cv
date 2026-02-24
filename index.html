@@ -11,18 +11,31 @@
 </head>
 <body>
 
-<section class="top-gradient">
-  <div class="container">
-    <nav>
-      <div class="language lang-right">
-        <button id="langBtn" class="lang-btn">DE ▾</button>
-        <div class="lang-menu" id="langMenu">
-          <button data-lang="de">Deutsch</button>
-          <button data-lang="en">English</button>
-        </div>
-      </div>
+<!-- -------------------- Header -------------------- -->
+<header class="main-header">
+  <div class="container header-inner">
+
+    <nav class="header-nav">
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#education">Education</a>
+      <a href="#contacts">Contacts</a>
     </nav>
 
+    <div class="language">
+      <button id="langBtn" class="lang-btn">DE ▾</button>
+      <div class="lang-menu" id="langMenu">
+        <button data-lang="de" class="lang-option">Deutsch</button>
+        <button data-lang="en" class="lang-option">English</button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- -------------------- Hero -------------------- -->
+<section class="top-gradient">
+  <div class="container">
     <section class="hero">
       <!-- HERO TITLES -->
       <h1 class="text-de">Hallo, mein name ist Vasiliy </h1>
@@ -31,10 +44,10 @@
       <!-- HERO SUBTITLES -->
       <p class="text-de" id="about_me_text">
         Ich bin ein motivierter IT-Enthusiast mit Schwerpunkt auf Linux, Python und Rust.
-        Seit meinem 14. Lebensjahr entwickle ich eigene Projekte, die ich weiter unten vorstelle.<br><br>
+        Seit meinem 14. Lebensjahr entwickle ich eigene Projekte, die ich weiter unten vorstelle.<br>
 
         Deutsch habe ich mir innerhalb von sechs Monaten von Grund auf selbst angeeignet 
-        und die B1-Prüfung erfolgreich bestanden.<br><br>
+        und die B1-Prüfung erfolgreich bestanden.<br>
 
         Mein Ziel ist eine duale Ausbildung im IT-Bereich in Deutschland, 
         um mein technisches Wissen praxisnah weiterzuentwickeln und aktiv im Unternehmen mitzuwirken.
@@ -43,10 +56,10 @@
       <p class="text-en" id="about_me_text_en" style="display:none">
         I am a motivated IT enthusiast with a focus on Linux, Python, and Rust.
         Since the age of 14, I have been developing my own projects, 
-        which I present below.<br><br>
+        which I present below.<br>
 
         I taught myself German from scratch within six months
-        and successfully passed the B1 examination.<br><br>
+        and successfully passed the B1 examination.<br>
 
         My goal is to start a dual vocational training program 
         in the IT field in Germany 
@@ -54,33 +67,25 @@
         and actively contribute to a company.
       </p>
 
-      <!-- CONTACT BUTTONS -->
-      <div class="hero-contacts">
-        <a href="https://wa.me/49123456789" target="_blank">WhatsApp +49 123 456 789</a>
-        <a href="mailto:mail@example.com">mail@example.com</a>
-      </div>
-
       <!-- CV BUTTON -->
       <a id="cvDownload" href="./resumes/Lebenslauf.pdf" target="_blank" class="hero-cv">Lebenslauf herunterladen</a>
     </section>
-
   </div>
 </section>
 
+<!-- -------------------- SKILLS -------------------- -->
 <div class="container">
-
-  <!-- SKILLS -->
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2 class="section-title text-de">Skills</h2>
     <h2 class="section-title text-en" style="display:none">Skills</h2>
 
     <div class="skill-item">
       <div class="skill-card">
         <h3 class="text-de">Programming</h3>
-          <h3 class="text-en" style="display:none">Programming</h3>
-          <p class="text-de">
-            Ich kenne Python und habe Grundkenntnisse in Rust. Ich habe erste Erfahrungen mit REST-APIs gesammelt.
-          </p>
+        <h3 class="text-en" style="display:none">Programming</h3>
+        <p class="text-de">
+          Ich kenne Python und habe Grundkenntnisse in Rust. Ich habe erste Erfahrungen mit REST-APIs gesammelt.
+        </p>
         <p class="text-en" style="display:none">
           I know Python and have basic knowledge of Rust, which I use for my own projects.
           I have gained some initial experience with REST APIs.
@@ -92,12 +97,8 @@
       <div class="skill-card">
         <h3 class="text-de">Web Development</h3>
         <h3 class="text-en" style="display:none">Web Development</h3>
-        <p class="text-de">
-          Ich erstelle Webseiten mit HTML und CSS.
-        </p>
-        <p class="text-en" style="display:none">
-          I create websites using HTML and CSS.
-        </p>
+        <p class="text-de">Ich erstelle Webseiten mit HTML und CSS.</p>
+        <p class="text-en" style="display:none">I create websites using HTML and CSS.</p>
       </div>
     </div>
 
@@ -105,48 +106,33 @@
       <div class="skill-card">
         <h3 class="text-de">Linux & Systems</h3>
         <h3 class="text-en" style="display:none">Linux & Systems</h3>
-        <p class="text-de">
-          Linux ist mein Hauptbetriebssystem. Ich betreibe meinen eigenen Server und deploye darauf meine Projekte.  
-        </p>
-        <p class="text-en" style="display:none">
-          Linux is my main operating system. I run my own server and deploy my projects on it.
-        </p>
+        <p class="text-de">Linux ist mein Hauptbetriebssystem. Ich betreibe meinen eigenen Server und deploye darauf meine Projekte.</p>
+        <p class="text-en" style="display:none">Linux is my main operating system. I run my own server and deploy my projects on it.</p>
       </div>
     </div>
 
-
-        <div class="skill-item">
+    <div class="skill-item">
       <div class="skill-card">
         <h3 class="text-de">Tools</h3>
         <h3 class="text-en" style="display:none">Tools</h3>
-        <p class="text-de">
-          Ich arbeite mit Git und GitHub.   
-        </p>
-        <p class="text-en" style="display:none">
-          I work with Git and GitHub.
-        </p>
+        <p class="text-de">Ich arbeite mit Git und GitHub.</p>
+        <p class="text-en" style="display:none">I work with Git and GitHub.</p>
       </div>
     </div>
 
-            <div class="skill-item">
+    <div class="skill-item">
       <div class="skill-card">
         <h3 class="text-de">AI & Automation</h3>
         <h3 class="text-en" style="display:none">AI & Automation</h3>
-        <p class="text-de">
-          Ich habe einen MCP-Server entwickelt und nutze KI-Tools produktiv, 
-          um die Entwicklung und mein Lernen zu unterstützen.  
-        </p>
-        <p class="text-en" style="display:none">
-          I developed an MCP server and use AI tools productively to support development and my learning.
-        </p>
+        <p class="text-de">Ich habe einen MCP-Server entwickelt und nutze KI-Tools produktiv, um die Entwicklung und mein Lernen zu unterstützen.</p>
+        <p class="text-en" style="display:none">I developed an MCP server and use AI tools productively to support development and my learning.</p>
       </div>
     </div>
   </section>
-
 </div>
 
-<!-- PORTFOLIO -->
-<section class="portfolio">
+<!-- -------------------- PORTFOLIO -------------------- -->
+<section class="portfolio" id="portfolio">
   <div class="container">
     <h2 class="section-title text-de">Portfolio</h2>
     <h2 class="section-title text-en" style="display:none">Portfolio</h2>
@@ -173,9 +159,9 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- -------------------- EDUCATION -------------------- -->
 <div class="container">
-  <section class="education">
+  <section class="education" id="education">
     <h2 class="section-title text-de">Education</h2>
     <h2 class="section-title text-en" style="display:none">Education</h2>
 
@@ -188,8 +174,8 @@
   </section>
 </div>
 
-<!-- FOOTER -->
-<footer>
+<!-- -------------------- FOOTER -------------------- -->
+<footer id="contacts">
   <div class="container">
     <a href="https://wa.me/49123456789" target="_blank">WhatsApp +49 123 456 789</a>
     <a href="mailto:mail@example.com">mail@example.com</a>
