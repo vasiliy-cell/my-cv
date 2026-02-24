@@ -28,7 +28,7 @@ body {
 /* -------------------- Top Gradient / Hero -------------------- */
 .top-gradient {
   background: linear-gradient(90deg, #fca54d, #fc7a67, #ff7bfb);
-  color: var(--text); /* черный текст */
+  color: var(--text);
   padding-bottom: 80px;
 }
 
@@ -38,10 +38,21 @@ body {
   flex-direction: column;
   gap: 30px;
   min-height: 60vh;
+  margin: 0 auto;
+}
+
+#about_me_text{
+  max-width: 850px;  
+}
+
+#about_me_text_en{
+  max-width: 850px;  
 }
 
 .hero p {
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.35rem; 
+  margin-bottom: 1em;
 }
 
 .hero-contacts a {
@@ -53,11 +64,10 @@ body {
 }
 
 /* -------------------- Buttons -------------------- */
-/* CV Button */
 .hero-cv {
   background: #111;
   color: #fff;
-  padding: 15px 32px; /* увеличено на ~30% */
+  padding: 10px 24px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -79,8 +89,8 @@ body {
 
 .lang-right {
   display: flex;
-  justify-content: flex-end; /* кнопка справа */
-  padding-top: 20px;         /* отступ сверху */
+  justify-content: flex-end;
+  padding-top: 20px;
 }
 
 .lang-btn {
@@ -88,15 +98,14 @@ body {
   color: #fff;
   border: 1px solid #111;
   border-radius: 12px;
-  padding: 13px 26px;        /* увеличено на 30% */
+  padding: 9px 18px;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 1.1rem;
+  font-size: 1rem;
   position: relative;
 }
 
-/* Убираем стрелку */
 .lang-btn::after {
   content: "";
 }
@@ -109,7 +118,7 @@ body {
 .lang-menu {
   position: absolute;
   top: 120%;
-  right: 0; /* под кнопкой справа */
+  right: 0;
   background: #111;
   border-radius: 12px;
   padding: 10px 0;
@@ -210,7 +219,7 @@ footer {
 }
 
 footer a {
-  display: block;  /* контакты друг под другом */
+  display: block;
   margin-bottom: 10px;
   color: white;
   text-decoration: none;
@@ -223,7 +232,7 @@ footer a {
     grid-template-columns: 1fr;
   }
   .lang-right{
-    justify-content:flex-end; /* кнопка справа на мобильных */
+    justify-content:flex-end;
     padding-top: 20px;
     margin-bottom:20px;
   }
