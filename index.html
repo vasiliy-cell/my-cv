@@ -39,15 +39,15 @@
     <section class="hero">
       <!-- HERO TITLES -->
       <h1 class="text-de">Hallo, mein name ist Vasiliy </h1>
-      <h1 class="text-en" style="display:none">Hi, name's Vasiliy</h1>
+      <h1 class="text-en" style="display:none">Hi,my name's Vasiliy</h1>
 
       <!-- HERO SUBTITLES -->
       <p class="text-de" id="about_me_text">
         Ich bin ein motivierter IT-Enthusiast mit Schwerpunkt auf Linux, Python und Rust.
         Seit meinem 14. Lebensjahr entwickle ich eigene Projekte, die ich weiter unten vorstelle.<br>
 
-        Deutsch habe ich mir innerhalb von sechs Monaten von Grund auf selbst angeeignet 
-        und die B1-Prüfung erfolgreich bestanden.<br>
+        Deutsch habe ich mir innerhalb von sechs Monaten von Grund auf selbst angeeignet und die
+        B1-Prüfung des Goethe-Institut erfolgreich bestanden.<br>
 
         Mein Ziel ist eine duale Ausbildung im IT-Bereich in Deutschland, 
         um mein technisches Wissen praxisnah weiterzuentwickeln und aktiv im Unternehmen mitzuwirken.
@@ -58,8 +58,8 @@
         Since the age of 14, I have been developing my own projects, 
         which I present below.<br>
 
-        I taught myself German from scratch within six months
-        and successfully passed the B1 examination.<br>
+        I learned German from scratch within six months and successfully 
+        passed the B1 examination at the Goethe-Institut.
 
         My goal is to start a dual vocational training program 
         in the IT field in Germany 
@@ -139,25 +139,105 @@
 
     <div class="project">
       <div class="project-text">
-        <h2 class="text-de">Projekt Eins</h2>
-        <h2 class="text-en" style="display:none">Project One</h2>
-        <p class="text-de">Architektur, Technologien und technische Herausforderungen.</p>
-        <p class="text-en" style="display:none">Architecture, technologies and technical challenges.</p>
+        <h2 class="text-de">AICLI - Linux Terminal Emulator with AI Assistant</h2>
+        <h2 class="text-en" style="display:none">AICLI - Linux Terminal Emulator with AI Assistant</h2>
+        <p class="text-de">
+          AICLI ist ein Linux-Terminal-Emulator mit integriertem AI-Assistenten. 
+          Sie hilft Einsteigern, effizient mit der Kommandozeile zu arbeiten. <br>
+
+          Technologien und Architektur:<br>
+          Das Projekt nutzt Rust für die Terminal-Logik und Prozessverwaltung. 
+          Tauri dient als Framework, um die Anwendung als eigenständiges Desktop-Programm bereitzustellen. 
+          Für die AI-Logik wird Python verwendet. Die Terminalanzeige erfolgt über xterm.js,
+           während HTML/CSS/JS die Benutzeroberfläche und die AI-Seitenleiste realisieren.<br>
+
+          Projektstatus:<br>
+          Frontend und AI-Logik sind vollständig implementiert. Derzeit wird das Backend 
+          integriert, um alle Komponenten zu einer funktionsfähigen Anwendung zu verbinden.<br>
+
+          Quellcode: https://github.com/vasiliy-cell/AI-console
+        </p>
+        <p class="text-en" style="display:none">
+          AICLI is a Linux terminal emulator with an integrated AI assistant.
+          It helps beginners work efficiently with the command line.<br>
+
+          Technologies and Architecture:<br>
+          The project uses Rust for terminal logic and process management.
+          Tauri serves as the framework to deliver the application as a standalone desktop program.
+          Python is used for the AI logic. The terminal display is powered by xterm.js,
+          while HTML/CSS/JS implement the user interface and the AI sidebar.<br>
+
+          Project Status:<br>
+          The frontend and AI logic are fully implemented. 
+          The backend is currently being integrated to connect
+          all components into a fully functional application.
+
+          Source code: https://github.com/vasiliy-cell/AI-console
+        </p>
       </div>
       <div class="project-image"></div>
     </div>
 
     <div class="project reverse">
       <div class="project-text">
-        <h2 class="text-de">Projekt Zwei</h2>
-        <h2 class="text-en" style="display:none">Project Two</h2>
-        <p class="text-de">Cloud-Integration und komplexe Datenverarbeitung.</p>
-        <p class="text-en" style="display:none">Cloud integration and complex data processing.</p>
+        <h2 class="text-de">MCP Server – Learning Project for Advanced AI Integration</h2>
+        <h2 class="text-en" style="display:none">MCP Server – Learning Project for Advanced AI Integration</h2>
+        <p class="text-de">
+          Learning Project for Advanced AI Integration Ein minimalistischer MCP Server,
+          entwickelt als gezieltes Lernprojekt zur tiefgehenden Auseinandersetzung mit AI-Integration
+          in Entwicklungsumgebungen. Der Server analysiert Projektstrukturen, liest Code,
+          und schlägt Änderungen in Form von Patches vor - bewusst ohne automatische Ausführung 
+          oder unkontrollierte Systemzugriffe. Dieses Projekt ist der erste Schritt auf dem Weg, 
+          AI-Systeme auf architektonisch hohem Niveau zu verstehen, zu gestalten und sicher in reale 
+          Entwicklungsprozesse zu integrieren.<br>
+           Quellcode: https://github.com/vasiliy-cell/AICLI-MCP
+        </p>
+        <p class="text-en" style="display:none">
+          A minimalist MCP server developed as a focused learning project 
+          to gain a deep understanding of AI integration in development environments. 
+          The server analyzes project structures, reads code,
+          and proposes changes in the form of patches - deliberately without automatic
+          execution or uncontrolled system access.
+
+          This project represents the first step toward understanding, designing, and securely
+          integrating AI systems at an architectural level into real-world development workflows. <br>
+          Source code:https://github.com/vasiliy-cell/AICLI-MCP
+
+        </p>
       </div>
       <div class="project-image"></div>
     </div>
+
+
+    <div class="project">
+      <div class="project-text">
+        <h2 class="text-de">Self-Hosted Portfolio Website</h2>
+        <h2 class="text-en" style="display:none">Self-Hosted Portfolio Website</h2>
+        <p class="text-de">
+          Eine vollständig selbst entwickelte 
+          und eigenständig gehostete Portfolio-Website.
+
+          Das Projekt umfasst die Frontend-Entwicklung, Serverkonfiguration,
+          Deployment-Automatisierung sowie die Einrichtung einer Produktionsumgebung
+          auf einem gemieteten Linux-Server.
+
+          Die Website wird eigenständig betrieben und gewartet,
+          einschließlich Umgebungs­konfiguration, Updates und Serververwaltung.
+        </p>
+        <p class="text-en" style="display:none">
+          A fully self-developed and self-hosted portfolio website.
+          The project includes frontend development, server configuration, 
+          deployment automation, and production setup on a rented Linux server.
+          The website is deployed and maintained independently, 
+          including environment configuration, updates, and server management. 
+        </p>
+      </div>
+      <div class="project-image"> <img src="./pictures/terminal.png" alt=""></div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- -------------------- EDUCATION -------------------- -->
 <div class="container">
@@ -166,10 +246,27 @@
     <h2 class="section-title text-en" style="display:none">Education</h2>
 
     <div class="education-item">
-      <h3 class="text-de">Bachelor of Computer Science</h3>
-      <h3 class="text-en" style="display:none">Bachelor of Computer Science</h3>
-      <p class="text-de">Universität Beispielstadt – Backend-Systeme und verteilte Architekturen.</p>
-      <p class="text-en" style="display:none">Example University – Backend systems and distributed architectures.</p>
+      <h3 class="text-de">
+        Seit 2025 – Sekundarschule (10. Klasse, derzeit) <br>
+        Voraussichtlicher Abschluss: 2026 <br>
+
+        2025 – Abschluss der Sekundarstufe I (9 Klassen)<br>
+        Russische Föderation<br>
+
+        Goethe-Zertifikat B1<br>
+        Goethe-Institut<br>
+      </h3> 
+      <h3 class="text-en" style="display:none">
+        Since 2025 – Secondary School (10th Grade, ongoing)<br>
+        Expected graduation: 2026<br>
+
+        2025 – Certificate of Basic General Education (9 Years of Schooling Completed)<br>
+        Russian Federation<br>
+
+        Goethe Certificate B1<br>
+        Issued by Goethe-Institut<br>
+      </h3>
+
     </div>
   </section>
 </div>
