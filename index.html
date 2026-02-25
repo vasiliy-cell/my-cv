@@ -134,53 +134,50 @@
 <!-- -------------------- PORTFOLIO -------------------- -->
 <section class="portfolio" id="portfolio">
   <div class="container">
-    <h2 class="section-title text-de">Portfolio</h2>
-    <h2 class="section-title text-en" style="display:none">Portfolio</h2>
+    <h2 class="section-title text-de" id="section-title-Portfolio">Portfolio</h2>
+    <h2 class="section-title text-en" id="section-title-Portfolio"style="display:none">Portfolio</h2>
 
-    <div class="project">
-      <div class="project-text">
-        <h2 class="text-de project-name">AICLI - Linux Terminal Emulator with AI Assistant</h2>
-        <h2 class="text-en project-name" style="display:none">AICLI - Linux Terminal Emulator with AI Assistant</h2>
-        <div class="text-de portfolio-projects">
-          <h4>Beschreibung</h4>
-          <div>
-          Eine GUI-Anwendung - ein Linux-Terminal-Emulator mit integriertem KI-Assistenten.
-          Sie unterstützt Einsteiger dabei, effizienter und sicherer mit der Kommandozeile zu arbeiten.
+    <div class="portfolio-cards">
+      
+      <!-- 1 карточка -->
+      <div class="project">
+        <div class="project-text">
+          <h2 class="text-de project-name">AICLI - Linux Terminal Emulator mit AI-Assistent</h2>
+          <h2 class="text-en project-name" style="display:none">AICLI - Linux Terminal Emulator with AI Assistant</h2>
+
+          <div class="text-de portfolio-projects">
+            <h4>Beschreibung</h4>
+            <div>Eine GUI-Anwendung - ein Linux-Terminal-Emulator mit integriertem KI-Assistenten. Sie unterstützt Einsteiger dabei, effizienter und sicherer mit der Kommandozeile zu arbeiten.</div>
+
+            <h4>Hauptfunktionen</h4>
+            <ul>
+              <li>Vollwertiges Bash/Zsh-Terminal</li>
+              <li>KI-Assistent zur Erklärung von Befehlen</li>
+              <li>Streaming von Antworten in Echtzeit</li>
+              <li>Möglichkeit, laufende Befehle abzubrechen</li>
+              <li>Desktop-Anwendung (kein Browser erforderlich)</li>
+            </ul>
+
+            <h4>Technologien</h4>
+            <ul>
+              <li>Rust - Terminal-Logik und Prozessverwaltung</li>
+              <li>Tauri - Desktop-Framework</li>
+              <li>Python - KI-Logik</li>
+              <li>xterm.js - Terminal-Darstellung</li>
+              <li>HTML/CSS/JS - Benutzeroberfläche</li>
+            </ul>
+
+            <h4>Status</h4>
+            <ul>
+              <li>Fertiggestellt: Frontend + KI-Logik</li>
+              <li>In Entwicklung: Backend-Integration</li>
+            </ul>
+            <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Quellcode</a>
           </div>
 
-          <h4>Hauptfunktionen</h4>
-          <ul>
-            <li>Vollwertiges Bash/Zsh-Terminal</li>
-            <li>KI-Assistent zur Erklärung von Befehlen</li>
-            <li>Streaming von Antworten in Echtzeit</li>
-            <li>Möglichkeit, laufende Befehle abzubrechen</li>
-            <li>Desktop-Anwendung (kein Browser erforderlich)</li>
-          </ul>
-
-          <h4>Technologien</h4>
-          <ul>
-            <li>Rust - Terminal-Logik und Prozessverwaltung</li>
-            <li>Tauri - Desktop-Framework</li>
-            <li>Python - KI-Logik</li>
-            <li>xterm.js - Terminal-Darstellung</li>
-            <li>HTML/CSS/JS - Benutzeroberfläche</li>
-          </ul>
-
-          <h4>Status</h4>
-          <ul>
-            <li>Fertiggestellt: Frontend + KI-Logik</li>
-            <li>In Entwicklung: Backend-Integration</li>
-          </ul>
-                    
-        <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Quellcode</a>
-
-        </div>
-        <div class="text-en portfolio-projects" style="display:none">
+          <div class="text-en portfolio-projects" style="display:none">
             <h4>Description</h4>
-            <div>
-              A GUI application - a Linux terminal emulator with an integrated AI assistant.
-              It helps beginners work with the command line more efficiently and safely.
-            </div>
+            <div>A GUI application - a Linux terminal emulator with an integrated AI assistant. It helps beginners work with the command line more efficiently and safely.</div>
 
             <h4>Key Features</h4>
             <ul>
@@ -205,48 +202,41 @@
               <li>Completed: frontend + AI logic</li>
               <li>In progress: backend integration</li>
             </ul>
-        <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Source code</a>
+            <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Source code</a>
+          </div>
         </div>
       </div>
-      <div class="project-image"></div>
-    </div>
 
-    <div class="project reverse">
-      <div class="project-text">
-        <h2 class="text-de project-name">MCP Server – Learning Project for Advanced AI Integration</h2>
-        <h2 class="text-en project-name" style="display:none">MCP Server – Learning Project for Advanced AI Integration</h2>
-        <div class="text-de portfolio-projects">
- 
-                        
-              <h4>Beschreibung</h4>
-              <div>
-              Ein minimalistischer MCP-Server, entwickelt als Lernprojekt zur vertieften Auseinandersetzung mit KI-Integration in der Softwareentwicklung.
-              </div>
+      <!-- 2 карточка -->
+      <div class="project">
+        <div class="project-text">
+          <h2 class="text-de project-name">MCP Server – Lernprojekt für KI-Integration</h2>
+          <h2 class="text-en project-name" style="display:none">MCP Server – Learning Project for AI Integration</h2>
 
-              <h4>Funktionen</h4>
-              <ul>
-                <li>Analyse der Projektstruktur</li>
-                <li>Lesen und Durchsuchen von Code</li>
-                <li>Erstellung semantischer Projektzusammenfassungen</li>
-                <li>Vorschläge von Änderungen in Form von Patches</li>
-              </ul>
+          <div class="text-de portfolio-projects">
+            <h4>Beschreibung</h4>
+            <div>Ein minimalistischer MCP-Server, entwickelt als Lernprojekt zur vertieften Auseinandersetzung mit KI-Integration in der Softwareentwicklung.</div>
 
-              <h4>Projektziel</h4>
-              <ul>
-                <li>Architektur von KI-Entwicklungstools verstehen</li>
-                <li>Sichere Integration von Modellen erlernen</li>
-                <li>Erster Schritt hin zu systemorientierter KI-Entwicklung</li>
-              </ul>
+            <h4>Funktionen</h4>
+            <ul>
+              <li>Analyse der Projektstruktur</li>
+              <li>Lesen und Durchsuchen von Code</li>
+              <li>Erstellung semantischer Projektzusammenfassungen</li>
+              <li>Vorschläge von Änderungen in Form von Patches</li>
+            </ul>
 
+            <h4>Projektziel</h4>
+            <ul>
+              <li>Architektur von KI-Entwicklungstools verstehen</li>
+              <li>Sichere Integration von Modellen erlernen</li>
+              <li>Erster Schritt hin zu systemorientierter KI-Entwicklung</li>
+            </ul>
             <a class="project-link" href="https://github.com/vasiliy-cell/AICLI-MCP">Quellcode</a>
+          </div>
 
-            </div>
-        <div class="text-en  portfolio-projects" style="display:none">
-
-          <h4>Description</h4>
-            <div>
-            A minimalist MCP server developed as a learning project to gain a deeper understanding of AI integration in software development.
-            </div>
+          <div class="text-en portfolio-projects" style="display:none">
+            <h4>Description</h4>
+            <div>A minimalist MCP server developed as a learning project to gain a deeper understanding of AI integration in software development.</div>
 
             <h4>Capabilities</h4>
             <ul>
@@ -262,24 +252,20 @@
               <li>Learn secure model integration</li>
               <li>Take the first step toward system-level AI engineering</li>
             </ul>
-          <a class="project-link" href="https://github.com/vasiliy-cell/AICLI-MCP">Source code</a>
-
+            <a class="project-link" href="https://github.com/vasiliy-cell/AICLI-MCP">Source code</a>
           </div>
+        </div>
       </div>
-      <div class="project-image"></div>
-    </div>
 
+      <!-- 3 карточка -->
+      <div class="project">
+        <div class="project-text">
+          <h2 class="text-de project-name">Selbstgehostete Portfolio-Website</h2>
+          <h2 class="text-en project-name" style="display:none">Self-Hosted Portfolio Website</h2>
 
-    <div class="project">
-      <div class="project-text">
-        <h2 class="text-de project-name">Self-Hosted Portfolio Website</h2>
-        <h2 class="text-en project-name" style="display:none">Self-Hosted Portfolio Website</h2>
-        <div class="text-de portfolio-projects">
-
+          <div class="text-de portfolio-projects">
             <h4>Beschreibung</h4>
-            <div>
-            Eine persönliche Portfolio-Website, vollständig eigenständig auf einem eigenen Server bereitgestellt und betrieben.
-            </div>
+            <div>Eine persönliche Portfolio-Website, vollständig eigenständig auf einem eigenen Server bereitgestellt und betrieben.</div>
 
             <h4>Projektumfang</h4>
             <ul>
@@ -289,30 +275,27 @@
               <li>Grundlegende Einrichtung einer Produktionsumgebung</li>
               <li>Eigenständige Wartung und Updates</li>
             </ul>
-        </div>
-        <div class="text-en portfolio-projects" style="display:none">
-          <h4>Description</h4>
-          <div>
-          A personal portfolio website fully deployed and managed independently on my own server.
           </div>
 
-          <h4>Scope of the Project</h4>
-          <ul>
-            <li>Frontend development</li>
-            <li>Linux server configuration</li>
-            <li>Project deployment</li>
-            <li>Basic production environment setup</li>
-            <li>Independent maintenance and updates</li>
-          </ul>
+          <div class="text-en portfolio-projects" style="display:none">
+            <h4>Description</h4>
+            <div>A personal portfolio website fully deployed and managed independently on my own server.</div>
+
+            <h4>Scope of the Project</h4>
+            <ul>
+              <li>Frontend development</li>
+              <li>Linux server configuration</li>
+              <li>Project deployment</li>
+              <li>Basic production environment setup</li>
+              <li>Independent maintenance and updates</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="project-image"> <img src="./pictures/terminal.png" alt=""></div>
-    </div>
 
+    </div>
   </div>
 </section>
-
-
 <!-- -------------------- EDUCATION -------------------- -->
 <div class="container">
   <section class="education" id="education">
