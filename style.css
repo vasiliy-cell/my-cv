@@ -1,4 +1,13 @@
 
+/* -------------------- Fonts -------------------- */
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+
+
 a { color: #fc7a67; }
 a:hover { color: #fe7be2; }
 
