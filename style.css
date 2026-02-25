@@ -1,14 +1,16 @@
 
-
-
-
-a { color: #fca44d; }
+a { color: #fc7a67; }
 a:hover { color: #fe7be2; }
 
+/* Цвет выделения */
+::selection {
+  background-color: #fe7be4;
+  color: #000000; /* чтобы текст был виден на ярком фоне */
+}
 
-
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* -------------------- Root Variables -------------------- */
 :root {
@@ -309,10 +311,11 @@ footer {
 
 footer a {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 16px; /* больше отступ между ссылками */
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem; /* увеличенный текст */
+  line-height: 1.8;  /* чтобы было воздушнее */
 }
 
 /* -------------------- Responsive -------------------- */
