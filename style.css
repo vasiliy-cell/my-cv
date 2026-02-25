@@ -1,3 +1,15 @@
+
+
+
+
+a { color: #fca44d; }
+a:hover { color: #fe7be2; }
+
+
+
+
+
+
 /* -------------------- Root Variables -------------------- */
 :root {
   --bg: #e9e7ec;
@@ -131,14 +143,18 @@ body {
 .hero {
   padding: 80px 0 30px;
 }
-
+.heroTitles{
+    font-size: 4.35rem; 
+    max-width: 600px;
+    margin-bottom: 30px;
+}
 #about_me_text, #about_me_text_en {
   max-width: 850px;  
 }
 
 .hero p {
   line-height: 1.8;
-  font-size: 1.35rem; 
+  font-size: 1.6rem; 
   margin-bottom: 1em;
 }
 
@@ -207,6 +223,18 @@ body {
   padding: 120px 0;
 }
 
+.portfolio-projects{
+  font-size: 1.6rem; 
+
+}
+.project-name{
+    font-size: 1.9rem; 
+    margin-bottom: 20px;
+
+}
+.project-link{
+  padding-top: 20px;
+}
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -224,10 +252,41 @@ body {
 }
 
 .project-image {
-  height: 350px;
+  max-height: 350px;
   background: #1c1c1c;
   border-radius: 8px;
 }
+
+/* -------------------- Portfolio Lists -------------------- */
+
+.portfolio-projects ul {
+  margin-left: 40px;        /* как будто tab */
+  /* margin-top: 10px;
+  margin-bottom: 20px; */
+  padding-left: 20px;       /* дополнительный отступ для маркеров */
+}
+
+.portfolio-projects li {
+  margin-bottom: 4px;       /* расстояние между пунктами */
+  line-height: 1.6;
+}
+
+/* если хочешь жирные маркеры */
+.portfolio-projects ul {
+  list-style-type: disc;
+}
+
+.portfolio-projects ul li::marker {
+  font-weight: bold;
+}
+
+.portfolio-projects ul li::marker {
+  color: #fc7a67;
+  font-size: 1.1em;
+}
+
+
+
 
 /* -------------------- Education -------------------- */
 .education {

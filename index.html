@@ -38,8 +38,8 @@
   <div class="container">
     <section class="hero">
       <!-- HERO TITLES -->
-      <h1 class="text-de">Hallo, mein name ist Vasiliy </h1>
-      <h1 class="text-en" style="display:none">Hi,my name's Vasiliy</h1>
+      <h1 class="text-de heroTitles">Hallo, mein name ist Vasiliy </h1>
+      <h1 class="text-en heroTitles" style="display:none">Hi,my name's Vasiliy</h1>
 
       <!-- HERO SUBTITLES -->
       <p class="text-de" id="about_me_text">
@@ -139,71 +139,132 @@
 
     <div class="project">
       <div class="project-text">
-        <h2 class="text-de">AICLI - Linux Terminal Emulator with AI Assistant</h2>
-        <h2 class="text-en" style="display:none">AICLI - Linux Terminal Emulator with AI Assistant</h2>
-        <p class="text-de">
-          AICLI ist ein Linux-Terminal-Emulator mit integriertem AI-Assistenten. 
-          Sie hilft Einsteigern, effizient mit der Kommandozeile zu arbeiten. <br>
+        <h2 class="text-de project-name">AICLI - Linux Terminal Emulator with AI Assistant</h2>
+        <h2 class="text-en project-name" style="display:none">AICLI - Linux Terminal Emulator with AI Assistant</h2>
+        <div class="text-de portfolio-projects">
+          <h4>Beschreibung</h4>
+          <div>
+          Eine GUI-Anwendung - ein Linux-Terminal-Emulator mit integriertem KI-Assistenten.
+          Sie unterstützt Einsteiger dabei, effizienter und sicherer mit der Kommandozeile zu arbeiten.
+          </div>
 
-          Technologien und Architektur:<br>
-          Das Projekt nutzt Rust für die Terminal-Logik und Prozessverwaltung. 
-          Tauri dient als Framework, um die Anwendung als eigenständiges Desktop-Programm bereitzustellen. 
-          Für die AI-Logik wird Python verwendet. Die Terminalanzeige erfolgt über xterm.js,
-           während HTML/CSS/JS die Benutzeroberfläche und die AI-Seitenleiste realisieren.<br>
+          <h4>Hauptfunktionen</h4>
+          <ul>
+            <li>Vollwertiges Bash/Zsh-Terminal</li>
+            <li>KI-Assistent zur Erklärung von Befehlen</li>
+            <li>Streaming von Antworten in Echtzeit</li>
+            <li>Möglichkeit, laufende Befehle abzubrechen</li>
+            <li>Desktop-Anwendung (kein Browser erforderlich)</li>
+          </ul>
 
-          Projektstatus:<br>
-          Frontend und AI-Logik sind vollständig implementiert. Derzeit wird das Backend 
-          integriert, um alle Komponenten zu einer funktionsfähigen Anwendung zu verbinden.<br>
+          <h4>Technologien</h4>
+          <ul>
+            <li>Rust - Terminal-Logik und Prozessverwaltung</li>
+            <li>Tauri - Desktop-Framework</li>
+            <li>Python - KI-Logik</li>
+            <li>xterm.js - Terminal-Darstellung</li>
+            <li>HTML/CSS/JS - Benutzeroberfläche</li>
+          </ul>
 
-          Quellcode: https://github.com/vasiliy-cell/AI-console
-        </p>
-        <p class="text-en" style="display:none">
-          AICLI is a Linux terminal emulator with an integrated AI assistant.
-          It helps beginners work efficiently with the command line.<br>
+          <h4>Status</h4>
+          <ul>
+            <li>Fertiggestellt: Frontend + KI-Logik</li>
+            <li>In Entwicklung: Backend-Integration</li>
+          </ul>
+                    
+        <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Quellcode</a>
 
-          Technologies and Architecture:<br>
-          The project uses Rust for terminal logic and process management.
-          Tauri serves as the framework to deliver the application as a standalone desktop program.
-          Python is used for the AI logic. The terminal display is powered by xterm.js,
-          while HTML/CSS/JS implement the user interface and the AI sidebar.<br>
+        </div>
+        <div class="text-en portfolio-projects" style="display:none">
+            <h4>Description</h4>
+            <div>
+              A GUI application - a Linux terminal emulator with an integrated AI assistant.
+              It helps beginners work with the command line more efficiently and safely.
+            </div>
 
-          Project Status:<br>
-          The frontend and AI logic are fully implemented. 
-          The backend is currently being integrated to connect
-          all components into a fully functional application.
+            <h4>Key Features</h4>
+            <ul>
+              <li>Full Bash/Zsh terminal</li>
+              <li>AI assistant that explains commands</li>
+              <li>Real-time streaming responses</li>
+              <li>Ability to interrupt running commands</li>
+              <li>Desktop application (no browser required)</li>
+            </ul>
 
-          Source code: https://github.com/vasiliy-cell/AI-console
-        </p>
+            <h4>Technologies</h4>
+            <ul>
+              <li>Rust - terminal logic and process management</li>
+              <li>Tauri - desktop framework</li>
+              <li>Python - AI logic</li>
+              <li>xterm.js - terminal rendering</li>
+              <li>HTML/CSS/JS - user interface</li>
+            </ul>
+
+            <h4>Status</h4>
+            <ul>
+              <li>Completed: frontend + AI logic</li>
+              <li>In progress: backend integration</li>
+            </ul>
+        <a class="project-link" href="https://github.com/vasiliy-cell/AI-console">Source code</a>
+        </div>
       </div>
       <div class="project-image"></div>
     </div>
 
     <div class="project reverse">
       <div class="project-text">
-        <h2 class="text-de">MCP Server – Learning Project for Advanced AI Integration</h2>
-        <h2 class="text-en" style="display:none">MCP Server – Learning Project for Advanced AI Integration</h2>
-        <p class="text-de">
-          Learning Project for Advanced AI Integration Ein minimalistischer MCP Server,
-          entwickelt als gezieltes Lernprojekt zur tiefgehenden Auseinandersetzung mit AI-Integration
-          in Entwicklungsumgebungen. Der Server analysiert Projektstrukturen, liest Code,
-          und schlägt Änderungen in Form von Patches vor - bewusst ohne automatische Ausführung 
-          oder unkontrollierte Systemzugriffe. Dieses Projekt ist der erste Schritt auf dem Weg, 
-          AI-Systeme auf architektonisch hohem Niveau zu verstehen, zu gestalten und sicher in reale 
-          Entwicklungsprozesse zu integrieren.<br>
-           Quellcode: https://github.com/vasiliy-cell/AICLI-MCP
-        </p>
-        <p class="text-en" style="display:none">
-          A minimalist MCP server developed as a focused learning project 
-          to gain a deep understanding of AI integration in development environments. 
-          The server analyzes project structures, reads code,
-          and proposes changes in the form of patches - deliberately without automatic
-          execution or uncontrolled system access.
+        <h2 class="text-de project-name">MCP Server – Learning Project for Advanced AI Integration</h2>
+        <h2 class="text-en project-name" style="display:none">MCP Server – Learning Project for Advanced AI Integration</h2>
+        <div class="text-de portfolio-projects">
+ 
+                        
+              <h4>Beschreibung</h4>
+              <div>
+              Ein minimalistischer MCP-Server, entwickelt als Lernprojekt zur vertieften Auseinandersetzung mit KI-Integration in der Softwareentwicklung.
+              </div>
 
-          This project represents the first step toward understanding, designing, and securely
-          integrating AI systems at an architectural level into real-world development workflows. <br>
-          Source code:https://github.com/vasiliy-cell/AICLI-MCP
+              <h4>Funktionen</h4>
+              <ul>
+                <li>Analyse der Projektstruktur</li>
+                <li>Lesen und Durchsuchen von Code</li>
+                <li>Erstellung semantischer Projektzusammenfassungen</li>
+                <li>Vorschläge von Änderungen in Form von Patches</li>
+              </ul>
 
-        </p>
+              <h4>Projektziel</h4>
+              <ul>
+                <li>Architektur von KI-Entwicklungstools verstehen</li>
+                <li>Sichere Integration von Modellen erlernen</li>
+                <li>Erster Schritt hin zu systemorientierter KI-Entwicklung</li>
+              </ul>
+
+            <a class="project-link" href="https://github.com/vasiliy-cell/AICLI-MCP">Quellcode</a>
+
+            </div>
+        <div class="text-en  portfolio-projects" style="display:none">
+
+          <h4>Description</h4>
+            <div>
+            A minimalist MCP server developed as a learning project to gain a deeper understanding of AI integration in software development.
+            </div>
+
+            <h4>Capabilities</h4>
+            <ul>
+              <li>Analyzes project structure</li>
+              <li>Reads and searches code</li>
+              <li>Generates semantic project summaries</li>
+              <li>Proposes changes in the form of patches</li>
+            </ul>
+
+            <h4>Project Goal</h4>
+            <ul>
+              <li>Understand the architecture of AI development tools</li>
+              <li>Learn secure model integration</li>
+              <li>Take the first step toward system-level AI engineering</li>
+            </ul>
+          <a class="project-link" href="https://github.com/vasiliy-cell/AICLI-MCP">Source code</a>
+
+          </div>
       </div>
       <div class="project-image"></div>
     </div>
@@ -211,26 +272,39 @@
 
     <div class="project">
       <div class="project-text">
-        <h2 class="text-de">Self-Hosted Portfolio Website</h2>
-        <h2 class="text-en" style="display:none">Self-Hosted Portfolio Website</h2>
-        <p class="text-de">
-          Eine vollständig selbst entwickelte 
-          und eigenständig gehostete Portfolio-Website.
+        <h2 class="text-de project-name">Self-Hosted Portfolio Website</h2>
+        <h2 class="text-en project-name" style="display:none">Self-Hosted Portfolio Website</h2>
+        <div class="text-de portfolio-projects">
 
-          Das Projekt umfasst die Frontend-Entwicklung, Serverkonfiguration,
-          Deployment-Automatisierung sowie die Einrichtung einer Produktionsumgebung
-          auf einem gemieteten Linux-Server.
+            <h4>Beschreibung</h4>
+            <div>
+            Eine persönliche Portfolio-Website, vollständig eigenständig auf einem eigenen Server bereitgestellt und betrieben.
+            </div>
 
-          Die Website wird eigenständig betrieben und gewartet,
-          einschließlich Umgebungs­konfiguration, Updates und Serververwaltung.
-        </p>
-        <p class="text-en" style="display:none">
-          A fully self-developed and self-hosted portfolio website.
-          The project includes frontend development, server configuration, 
-          deployment automation, and production setup on a rented Linux server.
-          The website is deployed and maintained independently, 
-          including environment configuration, updates, and server management. 
-        </p>
+            <h4>Projektumfang</h4>
+            <ul>
+              <li>Frontend-Entwicklung</li>
+              <li>Konfiguration eines Linux-Servers</li>
+              <li>Deployment des Projekts</li>
+              <li>Grundlegende Einrichtung einer Produktionsumgebung</li>
+              <li>Eigenständige Wartung und Updates</li>
+            </ul>
+        </div>
+        <div class="text-en portfolio-projects" style="display:none">
+          <h4>Description</h4>
+          <div>
+          A personal portfolio website fully deployed and managed independently on my own server.
+          </div>
+
+          <h4>Scope of the Project</h4>
+          <ul>
+            <li>Frontend development</li>
+            <li>Linux server configuration</li>
+            <li>Project deployment</li>
+            <li>Basic production environment setup</li>
+            <li>Independent maintenance and updates</li>
+          </ul>
+        </div>
       </div>
       <div class="project-image"> <img src="./pictures/terminal.png" alt=""></div>
     </div>
