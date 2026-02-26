@@ -1,6 +1,9 @@
 const langBtn = document.getElementById("langBtn");
 const langMenu = document.getElementById("langMenu");
 const cvBtn = document.getElementById("cvDownload");
+const header = document.getElementsByClassName('main-header')[0]
+
+console.log('header: ', header)
 
 // открыть / закрыть меню
 langBtn.addEventListener("click", e => {
@@ -12,6 +15,7 @@ langBtn.addEventListener("click", e => {
 document.addEventListener("click", () => {
   langMenu.classList.remove("show");
 });
+
 
 // переключение языка
 document.querySelectorAll(".lang-option").forEach(btn => {
@@ -43,4 +47,10 @@ document.querySelectorAll(".lang-option").forEach(btn => {
 
     langMenu.classList.remove("show");
   });
+});
+
+
+window.addEventListener("scroll", () => {
+  console.log('scroll')
+  header.classList.toggle("scrolled", window.scrollY > 50);
 });
