@@ -119,6 +119,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .header-nav a:hover {
@@ -141,6 +142,7 @@ body {
   font-weight: 500;
   transition: 0.3s;
   position: relative;
+  white-space: nowrap;
 }
 
 .lang-btn:hover {
@@ -253,6 +255,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+
 .skill-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
@@ -268,9 +272,12 @@ body {
   font-size: 1.3rem;
   line-height: 1.6;
 }
-
+#soft-skills{
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
 .softskills-list{
-    font-size: 1.3rem;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
@@ -356,6 +363,10 @@ body {
   margin-bottom: 50px; /* отступ под заголовком секции */
 }
 
+.firstinEducation{
+  padding-bottom: 20px;
+}
+
 .education-item {
   max-width: 900px;
   width: 100%;
@@ -400,8 +411,8 @@ footer a {
   .portfolio .project{
     grid-template-columns: 1fr;
   }
-  .header-inner {
+  /* .header-inner {
     flex-direction: column;
     gap: 10px;
-  }
+  } */
 }
