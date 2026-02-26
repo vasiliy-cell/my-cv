@@ -186,7 +186,7 @@ body {
   background: linear-gradient(90deg,#fca54d,#fc7a67,#ff7bfb);
   padding-top: 70px; /* чтобы header не перекрывал */
   padding-bottom: 30px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 /* Hero */
@@ -204,7 +204,7 @@ body {
 
 .hero p {
   line-height: 1.8;
-  font-size: 1.6rem; 
+  font-size: 1.5rem; 
   margin-bottom: 1em;
 }
 
@@ -220,6 +220,8 @@ body {
   display: inline-block;
   margin-top: auto;
   align-self: flex-start;
+    font-size: 1.5rem; 
+
 }
 
 .hero-cv:hover {
