@@ -186,7 +186,7 @@ body {
   background: linear-gradient(90deg,#fca54d,#fc7a67,#ff7bfb);
   padding-top: 70px; /* чтобы header не перекрывал */
   padding-bottom: 30px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 /* Hero */
