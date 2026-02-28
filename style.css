@@ -198,6 +198,10 @@ body {
   padding-top: 70px; /* чтобы header не перекрывал */
   padding-bottom: 30px;
   min-height: 100vh;
+
+
+    display: flex;
+  align-items: center;   /* ВОТ ЭТО центрирует по вертикали */
 }
 
 /* Hero */
@@ -301,8 +305,9 @@ body {
   padding: 80px 0;
 }
 #section-title-Portfolio{
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
+
 .portfolio h1,
 .portfolio h2,
 .portfolio h3,
