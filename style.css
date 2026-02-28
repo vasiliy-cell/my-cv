@@ -117,7 +117,7 @@ body {
 }
 
 /* Элемент будет скрыт, если ширина экрана 550px или меньше */
-@media (max-width: 560px) {
+@media (max-width: 700px) {
   .header-nav {
     display: none;
   }
@@ -197,17 +197,20 @@ body {
   background: linear-gradient(90deg,#fca54d,#fc7a67,#ff7bfb);
   padding-top: 70px; /* чтобы header не перекрывал */
   padding-bottom: 30px;
-  min-height: calc(100vh - 70px);
+  min-height: 100vh;
 }
 
 /* Hero */
 .hero {
   padding: 10px 0 30px;
+
+
 }
 .heroTitles{
     font-size: 4.35rem; 
     max-width: 600px;
     margin-bottom: 30px;
+
 }
 #about_me_text, #about_me_text_en {
   max-width: 850px;  
@@ -231,7 +234,7 @@ body {
   display: inline-block;
   margin-top: auto;
   align-self: flex-start;
-    font-size: 2.5rem; 
+    font-size: 1.5rem; 
 
 }
 
@@ -374,6 +377,18 @@ body {
   transform: translateY(-8px); /* чуть сильнее */
   box-shadow: 0 20px 50px rgba(0,0,0,0.18);
 }
+
+/* -------------------- WHY ME -------------------- */
+.why_me{
+  /* background-color: #fc7a67; */
+  background: linear-gradient(90deg, #ff7bfb, #fc7a67, #fca54d);
+  padding: 90px 0;
+}
+
+.why_me p{
+  font-size: 1.5rem;
+}
+
 
 
 /* -------------------- Education -------------------- */
