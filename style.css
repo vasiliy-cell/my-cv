@@ -208,34 +208,49 @@ padding: 0;
 
     display: flex;
   align-items: center;   /* ВОТ ЭТО центрирует по вертикали */
+
+  
 }
+
+
 
 /* Hero */
 .hero {
   padding: 10px 0 30px;
-  display: flex;
 }
+/* .hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;      
+    justify-content: center; 
+    min-height: 80vh;        
+} */
 
 
 
-.my_photo{
-    transform: scaleX(-1);
-    height: 600px;
-}
 .heroTitles{
     font-size: 4.35rem; 
     max-width: 600px;
     margin-bottom: 30px;
 
+
+/*     
+    margin-left: auto;
+    margin-right: auto; */
 }
+
 #about_me_text, #about_me_text_en {
   max-width: 850px;  
+  /* text-align: start; */
 }
 
 .hero p {
   line-height: 1.8;
   font-size: 1.5rem; 
   margin-bottom: 1.3em;
+
+  
 }
 
 /* Hero CV Button */
@@ -399,13 +414,18 @@ padding: 0;
 .why_me{
   /* background-color: #fc7a67; */
   background: linear-gradient(90deg, #ff7bfb, #fc7a67, #fca54d);
-  padding: 90px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
 }
 
 .why_me p{
   font-size: 1.5rem;
+}
+.why_me_text{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
