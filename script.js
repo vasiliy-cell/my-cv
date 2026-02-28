@@ -3,8 +3,6 @@ const langMenu = document.getElementById("langMenu");
 const cvBtn = document.getElementById("cvDownload");
 const header = document.getElementsByClassName('main-header')[0]
 
-console.log('header: ', header)
-
 // открыть / закрыть меню
 langBtn.addEventListener("click", e => {
   e.stopPropagation();
@@ -51,6 +49,5 @@ document.querySelectorAll(".lang-option").forEach(btn => {
 
 
 window.addEventListener("scroll", () => {
-  console.log('scroll')
   header.classList.toggle("scrolled", window.scrollY > 50);
 });

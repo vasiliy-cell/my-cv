@@ -1,11 +1,6 @@
 
 /* -------------------- Fonts -------------------- */
 
-body {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-
 @media (max-width: 769px) {
   html {
     /* Уменьшаем базовый размер шрифта на 30% */
@@ -29,7 +24,9 @@ ul li::marker {
   font-weight: bold;
 }
 
-
+section  {
+  width: 100%;
+}
 
 
 
@@ -46,10 +43,10 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  -ms-overflow-style: none !important;  /* IE и Edge */
-  scrollbar-width: none !important;     /* Firefox */
-}
+/* html, body {
+  -ms-overflow-style: none !important;  
+  scrollbar-width: none !important;    
+} */
 
 /* -------------------- Root Variables -------------------- */
 :root {
@@ -82,6 +79,7 @@ body {
 .main-header {
   position: fixed;
   top: 0;
+  max-width: 100dvw;
   width: 100%;
   z-index: 1000;
   background-color: transparent;
@@ -90,6 +88,14 @@ body {
   padding: 10px 0;
   transition: all 0.3s ease;
 }
+
+@media(max-width:500px){
+.main-header .header-inner .container{
+max-width: 100px; 
+padding: 0;
+
+}}
+
 
 .main-header.scrolled {
   width: 100%;
@@ -207,8 +213,14 @@ body {
 /* Hero */
 .hero {
   padding: 10px 0 30px;
+  display: flex;
+}
 
 
+
+.my_photo{
+    transform: scaleX(-1);
+    height: 600px;
 }
 .heroTitles{
     font-size: 4.35rem; 
@@ -388,6 +400,8 @@ body {
   /* background-color: #fc7a67; */
   background: linear-gradient(90deg, #ff7bfb, #fc7a67, #fca54d);
   padding: 90px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .why_me p{
@@ -452,6 +466,13 @@ footer a {
   font-size: 1.6rem; /* увеличенный текст */
   line-height: 1.8;  /* чтобы было воздушнее */
 }
+
+
+@media(max-width:500px){
+.calltaction{
+  font-size: 1.8rem; /* увеличенный текст */
+
+}}
 
 /* -------------------- Responsive -------------------- */
 @media(max-width:900px){
