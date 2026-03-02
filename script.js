@@ -38,7 +38,7 @@ document.querySelectorAll(".lang-option").forEach(btn => {
     }
 
     if (lang === "en") {
-      cvBtn.href = "./resumes/resume.txt";
+      cvBtn.href = "./resumes/resume.pdf";
       cvBtn.textContent = "Download Resume";
       langBtn.textContent = "EN ▾";
     }
