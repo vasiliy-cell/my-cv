@@ -32,13 +32,13 @@ document.querySelectorAll(".lang-option").forEach(btn => {
 
     // CV кнопка
     if (lang === "de") {
-      cvBtn.href = "./resumes/Lebenslauf.pdf";
+      cvBtn.href = "./resumes/Vasiliy_Gavrilin_Lebenslauf.pdf";
       cvBtn.textContent = "Lebenslauf herunterladen";
       langBtn.textContent = "DE ▾";
     }
 
     if (lang === "en") {
-      cvBtn.href = "./resumes/resume.pdf";
+      cvBtn.href = "./resumes/Vasiliy_Gavrilin_resume.pdf";
       cvBtn.textContent = "Download Resume";
       langBtn.textContent = "EN ▾";
     }
