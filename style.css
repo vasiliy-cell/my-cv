@@ -421,6 +421,7 @@ padding: 0;
 
 .why_me p{
   font-size: 1.5rem;
+    line-height: 1.6;
 }
 .why_me_text{
   max-width: 900px;
