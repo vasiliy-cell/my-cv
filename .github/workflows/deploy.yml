@@ -1,6 +1,5 @@
 name: Deploy Portfolio Site
 
-# Пайплайн запускается при пуше в главную ветку [10, 11]
 on:
   push:
     branches:
@@ -8,17 +7,11 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # Используем облачный раннер GitHub [12]
+    runs-on: ubuntu-latest
     steps:
-      # 1. Забираем код из репозитория [10, 13]
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Собираем Docker-образ (как мы учили раньше) [13, 14]
-      - name: Build Docker Image
-        run: docker build -t my-cv-image .
-
-      # 3. Деплой через SSH на твой VPS [8, 15]
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master
         with:
@@ -26,27 +19,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # 1. Переходим в папку с проектом
             cd /var/www/my-cv
-            
-            # 2. Обновляем код
             git pull
-            
-            # 3. Останавливаем и удаляем старый контейнер
             docker stop my-cv-container || true
             docker rm my-cv-container || true
-            
-            # 4. Собираем свежий образ
             docker build -t my-cv-image .
-      
-            # 5. Запускаем новую версию
-            docker run -d \
-              --name my-cv-container \
-              -p 8080:80 \
-              --restart unless-stopped \
-              my-cv-image
-
-            # 6. Очистка старых слоев (твоя отличная идея)
+            docker run -d --name my-cv-container -p 8080:80 --restart unless-stopped my-cv-image
             docker image prune -f
-
-
